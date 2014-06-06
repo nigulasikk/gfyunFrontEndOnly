@@ -1,0 +1,119 @@
+/*个人简介*/
+.self-introduce{
+    background-color: #fff;
+    border: 1px solid #bebec4;
+    color: #666;
+    font-size: 12px;
+    margin: 15px 0 0 13px;
+    width: 388px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.3);
+    height: 200px;
+    padding: 25px 30px;
+    width:100%;
+}
+.self-introduce .fields {
+    line-height: 30px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 0;
+    padding-left: 10px;
+    position: relative;
+    display: inline-block;
+    width: 300px;
+}
+.self-introduce .field-name {
+    padding-right: 0.4em;
+    color: #aaa;
+}
+
+/*时间轴*/
+.timeline .headline {
+    background: #6699c9;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-align: center;
+    width: 145px;
+    box-shadow: 2px 2px 2px #e3e3e3;
+    -moz-box-shadow: 2px 2px 2px #e3e3e3;
+    -webkit-box-shadow: 2px 2px 2px #e3e3e3;
+}
+.timeline .split-line{
+    border-right: solid #808080 2px;
+
+}
+.timeline .year-label{
+    float: right;
+    width: 70px;
+    height: 26px;
+    background: #c4cdd6;
+    line-height: 26px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.timeline .ind-arr {
+    float: right;
+    width: 0;
+    height: 26px;
+    border-style: solid;
+    border-width: 12px 0 12px 12px;
+    border-color: transparent #c4cdd6;
+    _font-size: 0;
+    _border-color: #fff #c4cdd6;
+}
+.timeline .year-overlay{
+    clear: both;
+}
+.timeline .one-day-overlay{
+    clear: both;
+    width: 145px;
+    text-align: right;
+    padding-top: 20px;
+    color: #999;
+    font-size: 12px;
+}
+.timeline .dot{
+    width: 11px;
+    height: 11px;
+    border-radius: 11px;
+    background-color: rgb(57, 57, 88);
+    display: inline-block;
+    position: relative;
+    left: 39px;
+}
+.timeline-item-content {
+    padding: 10px 20px;
+    text-align: left;
+    background: #f5f8fb;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border: 1px solid #ddd;
+    position: relative;
+    left: 220px;
+    min-width: 400px;
+    min-height: 60px;
+}
+.timeline .timeline-item-content .glyphicon{
+    padding-top: 10px;
+    color: #000000;
+    font-size: 30px;
+    float: right;
+}
+.timeline .timeline-item-content .score{
+    padding-top: 10px;
+    color: #000000;
+    font-size: 30px;
+    float: right;
+    padding-right: 10px;
+}
+.timeline-title{
+    color: #555;
+    font-size: 14px;
+    line-height: 32px;
+}
+.integral-calculate-result{
+    text-align: right;
+}

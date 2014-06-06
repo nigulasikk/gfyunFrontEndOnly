@@ -1,0 +1,13 @@
+.sidebar-nav-border{
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: 4px 3px 11px #888888;
+    box-shadow: 4px 3px 11px #888888;
+}
+.nav-pills > li.active2 > a, .nav-pills > li.active2 > a:hover, .nav-pills > li.active2 > a:focus {
+    color: #ffffff;
+    background-color: #0C8DF1;
+}

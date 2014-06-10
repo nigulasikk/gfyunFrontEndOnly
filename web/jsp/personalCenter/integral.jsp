@@ -23,34 +23,41 @@
             <div class="self-introduce row">
                 <div class="col-sm-2">
                     <img src="/images/head.jpg" alt="头像" class="img-rounded">
+                    <div class="progress progress-striped active" style="position: relative;margin-top: 10px;margin-bottom: 10px;">
+                        <span class="lever-detail">460/1100</span>
+                        <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+                        </div>
+                    </div>
+                    <p class="lever-name">初级用户</p>
+
                 </div>
                 <div class="col-sm-10">
                     <h3>个人主页</h3>
                     <div class="fields">
-                        <span class="field-name">单位名称：</span>
+                        <span class="field-name"><span class="glyphicon glyphicon-tree-deciduous"></span>&nbsp;单位名称：</span>
                         <span >国防科工局重大专项工程中心</span>
                     </div>
                     <div class="fields">
-                        <span class="field-name">用户代码：</span>
+                        <span class="field-name"><span class="glyphicon glyphicon-qrcode"></span>&nbsp;用户代码：</span>
                         <span >cheos</span>
                     </div>
 
 
 
                     <div class="fields">
-                        <span class="field-name">单位联系人：</span>
+                        <span class="field-name"><span class="glyphicon glyphicon-user"></span>&nbsp;单位联系人：</span>
                         <span >工程中心</span>
                     </div>
                     <div class="fields">
-                        <span class="field-name">联系电话：</span>
+                        <span class="field-name"><span class="glyphicon glyphicon-phone"></span>&nbsp;联系电话：</span>
                         <span >13812345678</span>
                     </div>
                     <div class="fields">
-                        <span class="field-name">E-mail：</span>
+                        <span class="field-name"><span class="glyphicon glyphicon-envelope"></span>&nbsp;E-mail：</span>
                         <span >cheos@gfg.com</span>
                     </div>
                     <div class="fields">
-                        <span class="field-name">云盘积分：</span>
+                        <span class="field-name"><span class="glyphicon glyphicon-star"></span>&nbsp;云盘积分：</span>
                         <span >88</span>
                     </div>
                 </div>
@@ -76,6 +83,21 @@
                                 <div class="dot"></div>
                                 <div class="timeline-item-content">
                                     <span class="glyphicon glyphicon-tasks"></span>
+                                    <span class="score">+5</span>
+
+                                    <div class="timeline-title">
+                                        登录奖励
+                                    </div>
+                                    <p>
+                                        上午6：18，用户登录
+                                    </p>
+                                    <p class="integral-calculate-result">云盘积分：105+5=110</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="dot"></div>
+                                <div class="timeline-item-content">
+                                    <span class="glyphicon glyphicon-tasks"></span>
                                     <span class="score">-10</span>
 
                                     <div class="timeline-title">
@@ -84,9 +106,25 @@
                                     <p>
                                         上午9：28，下载云盘文件
                                     </p>
-                                    <p class="integral-calculate-result">云盘积分：105-10=95</p>
+                                    <p class="integral-calculate-result">云盘积分：110-10=100</p>
                                 </div>
                             </div>
+                            <div class="item">
+                                <div class="dot"></div>
+                                <div class="timeline-item-content">
+                                    <span class="glyphicon glyphicon-tasks"></span>
+                                    <span class="score">-5</span>
+
+                                    <div class="timeline-title">
+                                        使用算法
+                                    </div>
+                                    <p>
+                                        上午9：28，使用去云算法
+                                    </p>
+                                    <p class="integral-calculate-result">云盘积分：100-5=95</p>
+                                </div>
+                            </div>
+
 
                         </div>
                     </div>
@@ -106,7 +144,7 @@
                                         登录奖励
                                     </div>
                                     <p>
-                                        上午11：28登录
+                                        上午11：28，用户登录
                                     </p>
                                     <p class="integral-calculate-result">云盘积分：80+5=85</p>
                                 </div>
@@ -122,7 +160,7 @@
                                     </div>
                                     <p>
                                         上午12：28，通过ftp上传资源
-                                        GF1_WFV1_W57.8_S4.0_20130102_L1A0000001064.tar.gz
+                                        <%--GF1_WFV1_W57.8_S4.0_20130102_L1A0000001064.tar.gz--%>
                                     </p>
                                     <p class="integral-calculate-result">云盘积分：85+20=105</p>
 

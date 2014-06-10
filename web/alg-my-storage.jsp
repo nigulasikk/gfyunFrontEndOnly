@@ -48,9 +48,9 @@
 
 			<div class="col-xs-12 col-sm-10">
                 <ul class="nav nav-tabs pull-right tabs-color">
-                    <li class="active"><a href="/alg.jsp">算法库&nbsp;<span class="glyphicon glyphicon-gbp"></span></a></li>
+                    <li ><a href="/alg.jsp">算法库&nbsp;<span class="glyphicon glyphicon-gbp"></span></a></li>
                     <li ><a href="/alg-my-upload.jsp">我的上传&nbsp;<span class="glyphicon glyphicon-heart"></span></a></li>
-                    <li ><a href="/alg-my-storage.jsp">我的收藏&nbsp;<span class="glyphicon glyphicon-heart"></span></a></li>
+                    <li class="active"><a href="/alg-my-storage.jsp">我的收藏&nbsp;<span class="glyphicon glyphicon-heart"></span></a></li>
                 </ul>
 				<div>
 					<ol class="breadcrumb" style="background-color: #eaf4fe;color:#0C8DF1;height: 44px;padding-top: 15px;">
@@ -98,89 +98,9 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail">
-							<img data-src="holder.js/300x200" alt="300x200"
-								src="images/b.png"
-								style="width: 300px; height: 200px;">
-							<div class="caption">
-								<h3>变色--资源中心</h3>
-								<p>可以帮您批量过滤云量过多的数据</p>
-								<p>
-									<a href="#" class="btn btn-primary use-application-btn"
-										role="button">使用</a> <a href="#"
-										class="btn btn-default store-application-btn" role="button">收藏</a>已被使用137次
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail">
-							<img data-src="holder.js/300x200" alt="300x200"
-								src="images/c.png"
-								style="width: 300px; height: 200px;">
-							<div class="caption">
-								<h3>位置矫正--资源中心</h3>
-								<p>可以帮您批量过滤云量过多的数据</p>
-								<p>
-									<a href="#" class="btn btn-primary use-application-btn"
-										role="button">使用</a> <a href="#"
-										class="btn btn-default store-application-btn" role="button">收藏</a>已被使用23次
-								</p>
-							</div>
-						</div>
-					</div>
+
 				</div>
-				<div class="row">
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail">
-							<img data-src="holder.js/300x200" alt="300x200"
-								src="images/d.png"
-								style="width: 300px; height: 200px;">
-							<div class="caption">
-								<h3>水稻分析--资源中心</h3>
-								<p>可以帮您批量过滤云量过多的数据</p>
-								<p>
-									<a href="#" class="btn btn-primary use-application-btn"
-										role="button">使用</a> <a href="#"
-										class="btn btn-default store-application-btn" role="button">收藏</a>已被使用2次
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail">
-							<img data-src="holder.js/300x200" alt="300x200"
-								src="images/e.png"
-								style="width: 300px; height: 200px;">
-							<div class="caption">
-								<h3>空间分析--资源中心</h3>
-								<p>可以帮您批量过滤云量过多的数据</p>
-								<p>
-									<a href="#" class="btn btn-primary use-application-btn"
-										role="button">使用</a> <a href="#"
-										class="btn btn-default store-application-btn" role="button">收藏</a>已被使用17次
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6 col-md-4">
-						<div class="thumbnail">
-							<img data-src="holder.js/300x200" alt="300x200"
-								src="images/f.png"
-								style="width: 300px; height: 200px;">
-							<div class="caption">
-								<h3>水纹分析--资源中心</h3>
-								<p>可以帮您批量过滤云量过多的数据</p>
-								<p>
-									<a href="#" class="btn btn-primary use-application-btn"
-										role="button">使用</a> <a href="#"
-										class="btn btn-default store-application-btn" role="button">收藏</a>已被使用1次
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
+
 
 
 

@@ -12,21 +12,24 @@
 
                     <li class="nav-item">
                         <span class="glyphicon glyphicon-user"></span>
-
                         <div class="dropdown" style="display: inline;">
-                            <a data-toggle="dropdown" href="#">
+                            <a id="user-name" data-toggle="dropdown tooltip" href="#" data-original-title="Default tooltip" data-placement="bottom"  data-trigger="manual">
                                 资源卫星中心<span class="caret" style="border-top: 4px solid #FFFFFF;"></span>
                             </a>
                             <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="/jsp/personalCenter/personalCenter.jsp"><span class="glyphicon glyphicon-home"></span>个人主页</a></li>
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="/jsp/personalCenter/integral.jsp"><span class="glyphicon glyphicon-star"></span>我的积分</a>
                                 </li>
+                                <li role="presentation"><a role="menuitem" tabindex="-1" href="/jsp/message/myMessage.jsp"><span class="glyphicon glyphicon-envelope"></span>我的通知</a>
+                                </li>
 
                                 <li role="presentation" class="divider"></li>
                                 <li role="presentation"><a role="menuitem" tabindex="-1" href="#"><span
                                         class="glyphicon glyphicon-off"></span>退出云盘</a></li>
                             </ul>
+
                         </div>
+
                     </li>
                     <li class="nav-item">
                         <div class="dropdown">
@@ -66,10 +69,40 @@
 
 </div>
 <script src="/bootstrap/assets/js/jquery.js"></script>
+<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
 <script>
     $(".nav-search").hover(function () {
         $(".search-div").css("display","block");
     }, function () {
         $(".search-div").css("display","none");
+    });
+
+
+// 积分提示
+    var userName=$("#user-name");
+    userName.attr("data-original-title","登录奖励，积分+5");
+    userName.tooltip('show');
+   // $("#user-name").tooltip('hide');
+
+//    $("#user-name").on('shown.bs.tooltip', function () {
+//        console.log("回调");
+//
+//    });
+//
+    setTimeout(function(){
+        destroyTip();
+    },3000);
+
+function destroyTip(){
+    console.log("hide");
+    userName.tooltip('hide');
+
+}
+//把 click弹出改成hover弹出
+    $('.dropdown').hover(function () {
+        $(this).addClass("open");
+    }, function () {
+        $(this).removeClass("open");
+
     });
 </script>

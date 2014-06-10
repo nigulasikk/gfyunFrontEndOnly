@@ -280,6 +280,7 @@
 <script src="/bootstrap/js/modal.js"></script>
 <script src="/js/jquery.ztree.core-3.5.min.js"></script>
 <script src="/js/group-detail.js"></script>
+<script src="js/groups.js"></script>
 
 <input type="hidden" id="groupId" value="${group.id }"/>
 </body>

@@ -14,16 +14,24 @@
 .self-introduce .fields {
     line-height: 30px;
     font-size: 14px;
-    color: #333;
+    color: #222;
     margin-bottom: 0;
     padding-left: 10px;
     position: relative;
     display: inline-block;
-    width: 300px;
+    width: 350px;
 }
 .self-introduce .field-name {
     padding-right: 0.4em;
     color: #aaa;
+    text-align: right;
+    width: 115px;
+    display: inline-block;
+
+}
+.self-introduce .fields .glyphicon{
+    float: left;
+    margin-top: 3px;
 }
 
 /*时间轴*/
@@ -117,3 +125,8 @@
 .integral-calculate-result{
     text-align: right;
 }
+/*升级进度细节*/
+.lever-detail{
+    position:absolute;width: 110px;text-align: center;top:3px;color:  #2F63BE;font-size: 10px;
+}
+.lever-name{font-size: 13px;text-align: center;}

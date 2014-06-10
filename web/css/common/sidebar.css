@@ -11,3 +11,5 @@
     color: #ffffff;
     background-color: #0C8DF1;
 }
+.expand-hdd:hover{cursor: pointer;text-decoration: none;}
+.hdd-volume{margin-top: 40px;}

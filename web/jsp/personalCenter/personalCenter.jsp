@@ -59,28 +59,8 @@
         </div>
     </div>
     <hr>
-    <section class="timeline">
-        <h2 class="headline">时间轴</h2>
-        <div class="row">
-            <div class="col-md-2 split-line">
-                <div class="year-overlay">
-                    <span class="ind-arr"></span>
-                    <span class="year-label">2013年</span>
-                </div>
-                <div class="month-overlay">
-                    10-5
-                    <div class="dot"></div>
-                </div>
-                <div class="year-overlay">
-                    <span class="ind-arr"></span>
-                    <span class="year-label">2014年</span>
-                </div>
-                <div class="month-overlay">
-                    
-                </div>
-            </div>
-        </div>
-    </section>
+
+<img src="/images/buildding.png" style="display:block;width:300px;margin:20px auto;">
 
 </div>
 

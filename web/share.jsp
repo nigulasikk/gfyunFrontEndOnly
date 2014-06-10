@@ -37,7 +37,7 @@
                 </ol>
             </div>
             <ul class="nav nav-tabs" id="shareTab">
-            	<li class="active"><a href="#myShared" data-toggle="tab">我的分享的</a></li>
+            	<li class="active"><a href="#myShared" data-toggle="tab">我分享的</a></li>
             	<li><a href="#shareToMe" data-toggle="tab">分享给我的</a></li>
             </ul>
             <div class="tab-content">

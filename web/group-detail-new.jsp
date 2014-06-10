@@ -355,5 +355,6 @@
 
 <input type="hidden" id="groupId" value="1">
 
+<script src="js/groups.js"></script>
 
 </body></html>

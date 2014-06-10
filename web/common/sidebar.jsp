@@ -18,6 +18,16 @@
         <li><a href="/alg.jsp">
             <span class="glyphicon glyphicon-gbp"></span>&nbsp;&nbsp;算法库</a></li>
     </ul>
+        <div class="hdd-volume">云盘容量：</div>
+        <div class="progress" style="position: relative;margin-top: 5px;height: 20px;height: 7px;margin-bottom:5px;">
+            <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 10%">
+            </div>
+        </div>
+        <p>
+
+            <span style="font-size: 12px;">460G/1100G</span>
+            <a class="expand-hdd pull-right">扩容</a>
+        </p>
     </div>
     <!--/.well -->
 </div>

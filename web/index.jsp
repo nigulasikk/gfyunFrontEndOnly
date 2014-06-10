@@ -11,7 +11,6 @@
 
 <!-- Static navbar -->
 <%@ include file="common/navbar.jsp" %>
-
 <div class="container">
 
     <div class="row row-offcanvas row-offcanvas-right">
@@ -98,7 +97,7 @@
                         <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">操作<span class="caret"></span></button>
                         <ul class="dropdown-menu" role="menu">
                             <li>
-                                <a>分享</a>
+                                <a class="share-one-file">分享</a>
                             </li>
                             <li><a>下载</a></li>
                         </ul>
@@ -128,7 +127,7 @@
                         <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">操作<span class="caret"></span></button>
                         <ul class="dropdown-menu" role="menu">
                             <li>
-                                <a>分享</a>
+                                <a class="share-one-file">分享</a>
                             </li>
                             <li><a>下载</a></li>
                         </ul>
@@ -158,7 +157,7 @@
                         <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">操作<span class="caret"></span></button>
                         <ul class="dropdown-menu" role="menu">
                             <li>
-                                <a>分享</a>
+                                <a class="share-one-file">分享</a>
                             </li>
                             <li><a>下载</a></li>
                         </ul>
@@ -188,7 +187,7 @@
                         <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">操作<span class="caret"></span></button>
                         <ul class="dropdown-menu" role="menu">
                             <li>
-                                <a>分享</a>
+                                <a class="share-one-file">分享</a>
                             </li>
                             <li><a>下载</a></li>
                         </ul>
@@ -218,7 +217,7 @@
                         <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">操作<span class="caret"></span></button>
                         <ul class="dropdown-menu" role="menu">
                             <li>
-                                <a>分享</a>
+                                <a class="share-one-file">分享</a>
                             </li>
                             <li><a>下载</a></li>
                         </ul>
@@ -248,7 +247,7 @@
                         <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">操作<span class="caret"></span></button>
                         <ul class="dropdown-menu" role="menu">
                             <li>
-                                <a>分享</a>
+                                <a class="share-one-file">分享</a>
                             </li>
                             <li><a>下载</a></li>
                             <li><a>移动</a></li>
@@ -308,7 +307,7 @@
                                 <a>下载</a>
                             </li>
                             <li>
-                                <a>分享</a>
+                                <a class="share-one-file">分享</a>
                             </li>
                             <li><a>移动</a></li>
                             <li><a>删除</a></li>
@@ -367,7 +366,7 @@
                                 <a>下载</a>
                             </li>
                             <li>
-                                <a>分享</a>
+                                <a class="share-one-file">分享</a>
                             </li>
                             <li><a>移动</a></li>
                             <li><a>删除</a></li>

@@ -10,11 +10,10 @@ $(document).ready(function () {
 //    refreshFilesTable(currentDic,1,PAGE_SIZE);
 
 //把 click弹出改成hover弹出
-    $('.dropdown-toggle').hover(function () {
-        $(this).parent().addClass("open");
-    }, function () {
-        $(this).parent().removeClass("open");
-    });
+    $('.dropdown-toggle').click(function () {
+        $(this).parent().toggleClass("open");
+        }
+    );
     //全选的单击事件
     $("#checkAll").click(function(){
     	if(this.checked){

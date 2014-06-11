@@ -91,11 +91,11 @@
 //
     setTimeout(function(){
         destroyTip();
-    },3000);
+    },2000);
 
 function destroyTip(){
     console.log("hide");
-    userName.tooltip('hide');
+    userName.tooltip('destroy');
 
 }
 //把 click弹出改成hover弹出

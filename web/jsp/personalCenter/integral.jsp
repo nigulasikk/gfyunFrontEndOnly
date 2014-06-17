@@ -20,48 +20,49 @@
     <div class="row">
         <%@ include file="/common/sidebar.jsp" %>
         <div class="col-xs-12 col-sm-10">
-            <div class="self-introduce row">
-                <div class="col-sm-2">
-                    <img src="/images/head.jpg" alt="头像" class="img-rounded">
-                    <div class="progress progress-striped active" style="position: relative;margin-top: 10px;margin-bottom: 10px;">
-                        <span class="lever-detail">460/1100</span>
-                        <div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-                        </div>
-                    </div>
-                    <p class="lever-name">初级用户</p>
+            <%--<div class="self-introduce row">--%>
+                <%--<div class="col-sm-2">--%>
+                    <%--<img src="/images/head.jpg" alt="头像" class="img-rounded">--%>
+                    <%--<div class="progress progress-striped active" style="position: relative;margin-top: 10px;margin-bottom: 10px;">--%>
+                        <%--<span class="lever-detail">460/1100</span>--%>
+                        <%--<div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">--%>
+                        <%--</div>--%>
+                    <%--</div>--%>
+                    <%--<p class="lever-name">初级用户</p>--%>
 
-                </div>
-                <div class="col-sm-10">
-                    <h3>个人主页</h3>
-                    <div class="fields">
-                        <span class="field-name"><span class="glyphicon glyphicon-tree-deciduous"></span>&nbsp;单位名称：</span>
-                        <span >国防科工局重大专项工程中心</span>
-                    </div>
-                    <div class="fields">
-                        <span class="field-name"><span class="glyphicon glyphicon-qrcode"></span>&nbsp;用户代码：</span>
-                        <span >cheos</span>
-                    </div>
+                <%--</div>--%>
+                <%--<div class="col-sm-10">--%>
+                    <%--<h3>个人主页</h3>--%>
+                    <%--<div class="fields">--%>
+                        <%--<span class="field-name"><span class="glyphicon glyphicon-tree-deciduous"></span>&nbsp;单位名称：</span>--%>
+                        <%--<span >国防科工局重大专项工程中心</span>--%>
+                    <%--</div>--%>
+                    <%--<div class="fields">--%>
+                        <%--<span class="field-name"><span class="glyphicon glyphicon-qrcode"></span>&nbsp;用户代码：</span>--%>
+                        <%--<span >cheos</span>--%>
+                    <%--</div>--%>
 
 
 
-                    <div class="fields">
-                        <span class="field-name"><span class="glyphicon glyphicon-user"></span>&nbsp;单位联系人：</span>
-                        <span >工程中心</span>
-                    </div>
-                    <div class="fields">
-                        <span class="field-name"><span class="glyphicon glyphicon-phone"></span>&nbsp;联系电话：</span>
-                        <span >13812345678</span>
-                    </div>
-                    <div class="fields">
-                        <span class="field-name"><span class="glyphicon glyphicon-envelope"></span>&nbsp;E-mail：</span>
-                        <span >cheos@gfg.com</span>
-                    </div>
-                    <div class="fields">
-                        <span class="field-name"><span class="glyphicon glyphicon-star"></span>&nbsp;云盘积分：</span>
-                        <span >88</span>
-                    </div>
-                </div>
-            </div>
+                    <%--<div class="fields">--%>
+                        <%--<span class="field-name"><span class="glyphicon glyphicon-user"></span>&nbsp;单位联系人：</span>--%>
+                        <%--<span >工程中心</span>--%>
+                    <%--</div>--%>
+                    <%--<div class="fields">--%>
+                        <%--<span class="field-name"><span class="glyphicon glyphicon-phone"></span>&nbsp;联系电话：</span>--%>
+                        <%--<span >13812345678</span>--%>
+                    <%--</div>--%>
+                    <%--<div class="fields">--%>
+                        <%--<span class="field-name"><span class="glyphicon glyphicon-envelope"></span>&nbsp;E-mail：</span>--%>
+                        <%--<span >cheos@gfg.com</span>--%>
+                    <%--</div>--%>
+                    <%--<div class="fields">--%>
+                        <%--<span class="field-name"><span class="glyphicon glyphicon-star"></span>&nbsp;云盘积分：</span>--%>
+                        <%--<span >88</span>--%>
+                    <%--</div>--%>
+                <%--</div>--%>
+            <%--</div>--%>
+                <canvas id="canvas" height="450" width="700"></canvas>
 
         </div>
     </div>
@@ -184,7 +185,9 @@
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="/bootstrap/assets/js/jquery.js"></script>
 <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="/bootstrap/js/tab.js"></script>
+<%--表格插件--%>
+<script src="/ui/Chart.js-master/Chart.js"></script>
+<script src="/js/personalCenter/integral.js"></script>
 
 </body>
 </html>

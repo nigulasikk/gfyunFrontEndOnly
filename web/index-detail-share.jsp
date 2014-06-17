@@ -125,7 +125,7 @@
                                 <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">操作<span class="caret"></span></button>
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
-                                        <a>下载</a>
+                                        <a class="downloadOne">下载</a>
                                     </li>
                                     <li>
                                         <a>分享</a>

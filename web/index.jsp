@@ -26,7 +26,7 @@
                     <li><a href="#">Library</a></li>
                     <li class="active">Data</li>
                      -->
-                    <li class="notcrumb">（已全部加载，共<label id="fileAmountLabel">-</label>个）</li>
+                    <li class="notcrumb">（已全部加载，共<label id="fileAmountLabel">9</label>个）</li>
                 </ol>
             </div>
 
@@ -35,7 +35,7 @@
 
                 <div class="btn-group">
                     <button type="button" class="btn btn-primary dropdown-toggle btn-sm" data-toggle="dropdown">
-             			离线上传<span class="caret"></span>
+             			<span class="glyphicon glyphicon-cloud-upload"></span>上传文件<span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
                     	<!-- 
@@ -99,7 +99,7 @@
                             <li>
                                 <a class="share-one-file">分享</a>
                             </li>
-                            <li><a>下载</a></li>
+                            <li><a class="downloadOne">下载</a></li>
                         </ul>
                     </div>
                 </td>
@@ -129,7 +129,7 @@
                             <li>
                                 <a class="share-one-file">分享</a>
                             </li>
-                            <li><a>下载</a></li>
+                            <li><a class="downloadOne">下载</a></li>
                         </ul>
                     </div>
                 </td>
@@ -159,7 +159,7 @@
                             <li>
                                 <a class="share-one-file">分享</a>
                             </li>
-                            <li><a>下载</a></li>
+                            <li><a class="downloadOne">下载</a></li>
                         </ul>
                     </div>
                 </td>
@@ -189,7 +189,37 @@
                             <li>
                                 <a class="share-one-file">分享</a>
                             </li>
-                            <li><a>下载</a></li>
+                            <li><a class="downloadOne">下载</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td >
+                    <input type="checkbox" name="fileCheckBox">
+                </td>
+                <td class="col-md-11">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="image-box">
+                                <img src="/images/folder-default.png" width="80" height="70">
+                            </div>
+
+                        </div>
+                        <div class="col-md-9">
+                            <small><a href="index-search.jsp">来自搜索</a></small>
+                        </div>
+
+                    </div>
+                </td>
+                <td class="col-md-1">
+                    <div class="col-md-1">
+                        <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">操作<span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a class="share-one-file">分享</a>
+                            </li>
+                            <li><a class="downloadOne">下载</a></li>
                         </ul>
                     </div>
                 </td>
@@ -219,7 +249,7 @@
                             <li>
                                 <a class="share-one-file">分享</a>
                             </li>
-                            <li><a>下载</a></li>
+                            <li><a class="downloadOne">下载</a></li>
                         </ul>
                     </div>
                 </td>
@@ -249,7 +279,7 @@
                             <li>
                                 <a class="share-one-file">分享</a>
                             </li>
-                            <li><a>下载</a></li>
+                            <li><a class="downloadOne">下载</a></li>
                             <li><a>移动</a></li>
                             <li><a>删除</a></li>
                         </ul>
@@ -304,7 +334,7 @@
                         <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">操作<span class="caret"></span></button>
                         <ul class="dropdown-menu" role="menu">
                             <li>
-                                <a>下载</a>
+                                <a class="downloadOne">下载</a>
                             </li>
                             <li>
                                 <a class="share-one-file">分享</a>
@@ -363,7 +393,7 @@
                         <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">操作<span class="caret"></span></button>
                         <ul class="dropdown-menu" role="menu">
                             <li>
-                                <a>下载</a>
+                                <a class="downloadOne">下载</a>
                             </li>
                             <li>
                                 <a class="share-one-file">分享</a>
@@ -470,6 +500,8 @@
     <!-- /.modal-dialog -->
 </div>
 <!-- /.modal -->
+
+
 
 <div class="modal fade" id="downloadProgressModel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true">
@@ -669,7 +701,7 @@
                             <li>
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" value="4" class="departmentForSelect" id="departmentForSelect4" name="IRSA">对地中心
+                                        <input type="checkbox" value="4" class="departmentForSelect" id="departmentForSelect4" name="对地中心">对地中心
                                     </label>
                                 </div>
                             </li>

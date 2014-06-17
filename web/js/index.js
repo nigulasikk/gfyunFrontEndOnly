@@ -9,7 +9,7 @@ $(document).ready(function () {
 //	}
 //    refreshFilesTable(currentDic,1,PAGE_SIZE);
 
-//把 click弹出改成hover弹出
+//加了bootstrap之后 ，操作下拉条不能open
     $('.dropdown-toggle').click(function () {
         $(this).parent().toggleClass("open");
         }
@@ -76,6 +76,9 @@ $(document).ready(function () {
 //			alert(res.msg);
 //		});
 //    });
+    $("#syncBtn").click(function(){
+        showTip("上传文件，+10");
+    });
     
     //分享按钮的点击事件
     $("#shareFile").click(function () {
@@ -93,6 +96,12 @@ $(document).ready(function () {
     		alert("请先选择数据再做分享");
     	}
     });
+
+  $(".downloadOne").click(function(){
+      if(confirm("下载此文件要消耗20个积分，你确定要下载吗？")){
+          showTip("下载文件，-20");
+      }
+  });
 
 //    单个文件夹分享
 $(".share-one-file").click(function(){
@@ -137,37 +146,37 @@ $(".share-one-file").click(function(){
         }
     });
     
-    //点击单位间共享的分享按钮
-    $("#shareWithSelectedDepartmentsBtn").click(function(){
-    	var selectDeparts = $(".departmentSelected:checked");
-    	var countSelected = selectDeparts.length;
-    	var rs = '';
-    	for(var i=0;i<countSelected;i++){
-    		rs += selectDeparts[i].value +',';
-    	}
-    	
-    	$.post("/index/shareFilesWithDepartments.htm",{selectedDepartments:rs,shareFiles:$("#shareFiles").val()},function(res){
-    		if(res==true){
-    			alert("分享成功");
-    		}else{
-    			alert("分享失败，请检查后重试");
-    		}
-    	});
-    	
-    	$(".selectedDepartsLi").remove();
-    	var checkedDeparts = $(".departmentForSelect:checked");
-    	for(var i=0;i<checkedDeparts.length;i++){
-    		checkedDeparts[i].checked=false;
-		}
-    	
-    });
+//    //点击单位间共享的分享按钮
+//    $("#shareWithSelectedDepartmentsBtn").click(function(){
+//    	var selectDeparts = $(".departmentSelected:checked");
+//    	var countSelected = selectDeparts.length;
+//    	var rs = '';
+//    	for(var i=0;i<countSelected;i++){
+//    		rs += selectDeparts[i].value +',';
+//    	}
+//
+//    	$.post("/index/shareFilesWithDepartments.htm",{selectedDepartments:rs,shareFiles:$("#shareFiles").val()},function(res){
+//    		if(res==true){
+//    			alert("分享成功");
+//    		}else{
+//    			alert("分享失败，请检查后重试");
+//    		}
+//    	});
+//
+//    	$(".selectedDepartsLi").remove();
+//    	var checkedDeparts = $(".departmentForSelect:checked");
+//    	for(var i=0;i<checkedDeparts.length;i++){
+//    		checkedDeparts[i].checked=false;
+//		}
+//
+//    });
     
-    //返回上级目录
-    $("#goBackBtn").click(function(){
-    	var lastDirectory = lastDirectoryArray.pop();
-    	$("#currentDirectoryInput").val(lastDirectory);
-        refreshFilesTable(lastDirectory,1,PAGE_SIZE);
-    });
+//    //返回上级目录
+//    $("#goBackBtn").click(function(){
+//    	var lastDirectory = lastDirectoryArray.pop();
+//    	$("#currentDirectoryInput").val(lastDirectory);
+//        refreshFilesTable(lastDirectory,1,PAGE_SIZE);
+//    });
     
     //运处理Modal
     $("#cloudBtn").click(function () {

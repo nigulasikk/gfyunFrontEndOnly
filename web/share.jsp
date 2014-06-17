@@ -37,11 +37,12 @@
                 </ol>
             </div>
             <ul class="nav nav-tabs" id="shareTab">
-            	<li class="active"><a href="#myShared" data-toggle="tab">我分享的</a></li>
-            	<li><a href="#shareToMe" data-toggle="tab">分享给我的</a></li>
+            	<li class="active"><a href="#shareToMe" data-toggle="tab">分享给我的</a></li>
+                <li ><a href="#myShared" data-toggle="tab">我分享的</a></li>
+
             </ul>
             <div class="tab-content">
-				<div class="tab-pane in active fade" id="myShared">
+				<div class="tab-pane in  fade" id="myShared">
                    <table class="table table-striped table-hover">
 		                <thead>
 		                    <tr>
@@ -110,7 +111,8 @@
                                             <a>在地图上显示</a>
                                         </li>
                                         <li>
-                                            <a>取消分享</a>
+                                            <a class="cancel-sheare-one">取消分享</a>
+
                                         </li>
                                     </ul>
                                 </div>
@@ -169,7 +171,7 @@
                                             <a>在地图上显示</a>
                                         </li>
                                         <li>
-                                            <a>取消分享</a>
+                                            <a class="cancel-sheare-one">取消分享</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -179,7 +181,7 @@
             		</table>
 				</div>
 				
-				<div class="tab-pane in fade" id="shareToMe">
+				<div class="tab-pane in fade active" id="shareToMe">
                    <table class="table table-striped table-hover">
 		                <thead>
 		                    <tr>
@@ -247,7 +249,7 @@
                                     <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">操作<span class="caret"></span></button>
                                     <ul class="dropdown-menu" role="menu">
                                         <li>
-                                            <a>接受</a>
+                                            <a class="share-accept">接受</a>
                                         </li>
                                         <li>
                                             <a>忽略</a>

@@ -126,10 +126,10 @@
                     <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">操作<span class="caret"></span></button>
                     <ul class="dropdown-menu" role="menu">
                         <li>
-                            <a>下载</a>
+                            <a class="downloadOne">下载</a>
                         </li>
                         <li>
-                            <a>分享</a>
+                            <a class="share-one-file">分享</a>
                         </li>
                         <li><a>移动</a></li>
                         <li><a>删除</a></li>
@@ -402,101 +402,78 @@
     <!-- /.modal-dialog -->
 </div>
 <!-- /.modal -->
-<div class="modal fade" id="chooseDepartmentModel" tabindex="-1" role="dialog" aria-labelledby="chooseDepartmentModalLabel"
+<div class="modal fade" id="chooseGroupModel" tabindex="-1" role="dialog" aria-labelledby="chooseGroupModalLabel"
      aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="chooseDepartmentModalLabel">分享向导</h4>
-                <h5 class="modal-title">第二步：请选择分享单位</h5>
+                <h4 class="modal-title" id="chooseGroupModalLabel">分享向导</h4>
+                <h5 class="modal-title">第二步：请选择分享群组</h5>
             </div>
             <div class="modal-body">
-                <ul class="nav nav-tabs">
-                    <li class="active"><a href="#allDepartments" data-toggle="tab">所有单位</a></li>
+                <ul class="list-inline">
+                    <li>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> 北京雾霾
+                            </label>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> 杭州内涝
+                            </label>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> 石家庄地震
+                            </label>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> 日本地震
+                            </label>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> 云南干旱
+                            </label>
+                        </div>
+
+                    </li>
+                    <li>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox"> 温州台风
+                            </label>
+                        </div>
+
+                    </li>
                 </ul>
-                <!-- Tab panes -->
-                <div class="tab-content">
-                    <div class="tab-pane in active fade" id="allDepartments">
-                        <ul class="list-inline">
-                       		<li>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="3" class="departmentForSelect" id="departmentForSelect3" name="资源卫星中心">资源卫星中心
-                                    </label>
-                                </div>
-                            </li>
-                            
-                            <li>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="4" class="departmentForSelect" id="departmentForSelect4" name="IRSA">对地中心
-                                    </label>
-                                </div>
-                            </li>
 
-                            <li>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="5" class="departmentForSelect" id="departmentForSelect5" name="国土资源部">国土资源部
-                                    </label>
-                                </div>
 
-                            </li>
-
-                            <li>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="6" class="departmentForSelect" id="departmentForSelect6" name="国家环保部">国家环保部
-                                    </label>
-                                </div>
-
-                            </li>
-
-                            <li>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" value="7" class="departmentForSelect" id="departmentForSelect7" name="国家农业部">国家农业部
-                                    </label>
-                                </div>
-
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="" >
-                        <label>已选择的单位：</label>
-                        <ul class="list-inline" id="selectedDepartmentsUl">
-                        	<!-- 
-                            <li>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" class="departmentSelected" checked>资源中心
-                                    </label>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox" class="departmentSelected" checked>资源中心
-                                    </label>
-                                </div>
-                            </li>
-                             -->
-                        </ul>
-                    </div>
-                </div>
             </div>
 
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal" id="shareWithSelectedDepartmentsBtn">分享</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="">分享</button>
             </div>
         </div>
         <!-- /.modal-content -->
     </div>
     <!-- /.modal-dialog -->
 </div>
-<!-- /.modal -->
 
 <!--选择部门modal-->
 <div class="modal fade" id="chooseGroupModel" tabindex="-1" role="dialog" aria-labelledby="chooseGroupModalLabel"

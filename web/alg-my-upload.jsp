@@ -298,9 +298,9 @@
 				<div class="modal-footer">
 					<button type="button" class="btn btn-default" data-dismiss="modal"
 						id="">取消</button>
-					<button type="button" class="btn btn-default" data-dismiss="modal"
-						id="">保存</button>
-				</div>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="save-alg">保存</button>
+
+                </div>
 			</div>
 		</div>
 		<!-- /.modal-dialog -->
@@ -321,6 +321,8 @@
 	<script src="bootstrap/js/modal.js"></script>
 	<script src="bootstrap/js/tab.js"></script>
 	<script src="js/jquery.ztree.core-3.5.min.js"></script>
+<script type="text/javascript" src="/ui/zTree_v3/js/jquery.ztree.excheck-3.5.js"></script>
+
 	<script src="js/alg.js"></script>
 </body>
 </html>

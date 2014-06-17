@@ -19,4 +19,7 @@
 <!--[if lt IE 9]>
 <script src="bootstrap/assets/js/html5shiv.js"></script>
 <script src="bootstrap/assets/js/respond.min.js"></script>
+
+
 <![endif]-->
+<script src="/js/jquery-1.7.2.min.js"></script>

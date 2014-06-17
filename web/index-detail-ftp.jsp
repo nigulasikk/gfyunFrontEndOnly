@@ -125,10 +125,10 @@
                                 <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">操作<span class="caret"></span></button>
                                 <ul class="dropdown-menu" role="menu">
                                     <li>
-                                        <a>下载</a>
+                                        <a class="downloadOne">下载</a>
                                     </li>
                                     <li>
-                                        <a>分享</a>
+                                        <a class="share-one-file">分享</a>
                                     </li>
                                     <li><a>移动</a></li>
                                     <li><a>删除</a></li>
@@ -184,10 +184,10 @@
                     <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">操作<span class="caret"></span></button>
                     <ul class="dropdown-menu" role="menu">
                         <li>
-                            <a>下载</a>
+                            <a class="downloadOne">下载</a>
                         </li>
                         <li>
-                            <a>分享</a>
+                            <a class="share-one-file">分享</a>
                         </li>
                         <li><a>移动</a></li>
                         <li><a>删除</a></li>

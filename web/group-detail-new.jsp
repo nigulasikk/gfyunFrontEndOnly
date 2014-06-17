@@ -8,28 +8,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html lang="en"><head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="../bootstrap/assets/ico/favicon.png">
-
-    <title>高分云共享</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="../bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="../css/navbar-static-top.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="bootstrap/assets/js/html5shiv.js"></script>
-    <script src="bootstrap/assets/js/respond.min.js"></script>
-    <![endif]-->
-
-
-    <link rel="stylesheet" href="/css/zTreeStyle/zTreeStyle.css" type="text/css">
+    <%@ include file="common/basicHeaderContent.jsp" %>
+    <link rel="stylesheet" href="/ui/zTree_v3/css/zTreeStyle/zTreeStyle.css" type="text/css">
 </head>
 
 <body style="">
@@ -63,7 +43,7 @@
                 <button type="button" class="btn  btn-primary btn-sm" id="exportToPanBtn">转到云盘</button>
                 <button type="button" class="btn btn-default btn-sm" id="importFromPanBtn">从云盘导入</button>
                 <button type="button" class="btn btn-default btn-sm" id="groupInfoBtn">群信息</button>
-                <button type="button" class="btn btn-default btn-sm" id="addGroupMemberBtn">添加成员</button>
+                <button type="button" class="btn btn-default btn-sm" id="addGroupMemberBtn">成员管理</button>
             </div>
 
             <table class="table table-striped table-hover">
@@ -127,7 +107,10 @@
                             <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">操作<span class="caret"></span></button>
                             <ul class="dropdown-menu" role="menu">
                                 <li>
-                                    <a>转存到云盘</a>
+                                    <a class="exportGroupToHddOne">转存到云盘</a>
+                                </li>
+                                <li>
+                                    <a class="downloadOne">下载</a>
                                 </li>
 
 
@@ -194,12 +177,19 @@
                         </table>
                     </div>
                     <div class="tab-pane fade" id="allDepartments">
-                        <ul class="list-inline" id="allDepartmentsUl">
+                        <ul class="list-inline" id="allDepartmentsUl" style="margin-top:20px;">
                             <li>资源中心</li>
-                            <li>资源中心</li>
-                            <li>资源中心</li>
-                            <li>资源中心</li>
-                            <li>资源中心</li>
+                            <li>对地中心
+
+
+                            </li>
+                            <li>
+                                国土资源部
+                            </li>
+                            <li>
+                                国家环保部
+                            </li>
+                            <li>国家农业部</li>
                         </ul>
                     </div>
                 </div>
@@ -233,7 +223,7 @@
                     <li>
                         <div class="checkbox">
                             <label>
-                                <input type="checkbox" value="4" class="departmentForSelect" id="departmentForSelect4" name="IRSA">对地中心
+                                <input type="checkbox" value="4" class="departmentForSelect" id="departmentForSelect4" name="对地中心">对地中心
                             </label>
                         </div>
 
@@ -306,14 +296,15 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                <h4 class="modal-title" id="exportToPanModelLabel">转到云盘</h4>
+                <h4 class="modal-title" id="exportToPanModelLabel">转存到云盘</h4>
                 <h6 class="modal-title">目录选择</h6>
             </div>
             <div class="modal-body">
-                <ul id="exportToPanTree" class="ztree"></ul>
+                <ul id="treeDemoCatlog" class="ztree"></ul>
+
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal" id="">保存</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="">转存</button>
             </div>
         </div>
         <!-- /.modal-content -->
@@ -331,10 +322,10 @@
                 <h6 class="modal-title">目录选择</h6>
             </div>
             <div class="modal-body">
-                <ul id="importFromPanTree" class="ztree"></ul>
+                <ul id="treeDemo" class="ztree"></ul>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal" id="saveImportBtn">保存</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="">导入</button>
             </div>
         </div>
         <!-- /.modal-content -->
@@ -350,7 +341,8 @@
 <script src="/bootstrap/assets/js/jquery.js"></script>
 <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/bootstrap/js/modal.js"></script>
-<script src="/js/jquery.ztree.core-3.5.min.js"></script>
+<script type="text/javascript" src="/ui/zTree_v3/js/jquery.ztree.core-3.5.js"></script>
+<script type="text/javascript" src="/ui/zTree_v3/js/jquery.ztree.excheck-3.5.js"></script>
 <script src="/js/group-detail.js"></script>
 
 <input type="hidden" id="groupId" value="1">

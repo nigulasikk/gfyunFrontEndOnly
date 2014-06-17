@@ -102,7 +102,7 @@
                                 <small>文件来源：来自区域订阅</small>
                             </div>
                             <div class="col-md-8">
-                                <small>区域订阅名称：北京三环内空气数据订阅</small>
+                                <small>区域订阅名称：华东区域订阅</small>
                             </div>
                         </div>
                         <div class="row">
@@ -126,10 +126,10 @@
                     <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown">操作<span class="caret"></span></button>
                     <ul class="dropdown-menu" role="menu">
                         <li>
-                            <a>下载</a>
+                            <a class="downloadOne">下载</a>
                         </li>
                         <li>
-                            <a>分享</a>
+                            <a class="share-one-file">分享</a>
                         </li>
                         <li><a>移动</a></li>
                         <li><a>删除</a></li>
@@ -430,7 +430,7 @@
                             <li>
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" value="4" class="departmentForSelect" id="departmentForSelect4" name="IRSA">对地中心
+                                        <input type="checkbox" value="4" class="departmentForSelect" id="departmentForSelect4" name="对地中心">对地中心
                                     </label>
                                 </div>
                             </li>

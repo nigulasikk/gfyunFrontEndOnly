@@ -15,6 +15,9 @@
 <!-- Custom styles for this template -->
 <link href="/css/navbar-static-top.css" rel="stylesheet">
 
+<%--积分提示增加js--%>
+<link rel="stylesheet" href="/ui/terebentina-sco.js-d4cbed7/css/sco.message.css">
+
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
 <script src="bootstrap/assets/js/html5shiv.js"></script>
@@ -23,3 +26,5 @@
 
 <![endif]-->
 <script src="/js/jquery-1.7.2.min.js"></script>
+
+

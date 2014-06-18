@@ -6,7 +6,8 @@ $(document).ready(function(){
     );
     $(".share-accept").click(function(){
         $(this).parents("tr").remove();
-        showTip("接受分享，-1");
+//        showTip("接受分享，-1");
+        showMessage("接受分享，-1");
     });
     $(".cancel-sheare-one").click(function(){
         $(this).parents("tr").remove();

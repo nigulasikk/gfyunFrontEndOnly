@@ -51,7 +51,8 @@ $(document).ready(function () {
     //下载文件
     $(".downloadOne").click(function(){
         if(confirm("下载此文件要消耗20个积分，你确定要下载吗？")){
-            showTip("下载文件，-20");
+//            showTip("下载文件，-20");
+            showMessage("下载文件，-20");
         }
     });
     //群信息单击事件
@@ -90,6 +91,11 @@ $(document).ready(function () {
     $(".exportGroupToHddOne").click(function(){
         $("#exportToPanModel").modal('toggle');
     });
+//    群组数据导入到云盘
+    $("#groupExportToHddConfirm").click(function(){
+        showMessage("转存文件，-1");
+
+    });
     //从云盘导入单击事件
     $("#importFromPanBtn").click(function(){
 //    	if($.fn.zTree.getZTreeObj("importFromPanTree")==undefined){
@@ -110,7 +116,6 @@ $(document).ready(function () {
     
 //    $("#saveImportBtn").click(function(){
 //    	$.post("/groupfile/importfile.htm",{},function(res){
-//    		//TODO:
 //    	});
 //    });
     

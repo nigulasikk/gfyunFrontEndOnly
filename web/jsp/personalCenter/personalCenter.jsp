@@ -19,7 +19,7 @@
 <div class="container">
     <div class="row">
         <%@ include file="/common/sidebar.jsp" %>
-        <div class="col-xs-12 col-sm-10">
+        <div class="col-md-10">
             <div class="self-introduce row">
                 <div class="col-sm-2">
                     <img src="/images/head.jpg" alt="头像" class="img-rounded">

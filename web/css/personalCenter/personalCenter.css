@@ -1,4 +1,4 @@
-/*个人简介*/
+/*我的积分*/
 .self-introduce{
     background-color: #fff;
     border: 1px solid #bebec4;
@@ -104,13 +104,26 @@
     min-width: 400px;
     min-height: 60px;
 }
-.timeline .timeline-item-content .glyphicon{
+.timeline-item-content-right {
+    padding: 10px 20px;
+    text-align: left;
+    background: #f5f8fb;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border: 1px solid #ddd;
+    position: relative;
+    left: 620px;
+    min-width: 400px;
+    min-height: 60px;
+}
+.timeline .timeline-item-content .glyphicon,.timeline .timeline-item-content-right .glyphicon{
     padding-top: 10px;
     color: #000000;
     font-size: 30px;
     float: right;
 }
-.timeline .timeline-item-content .score{
+.timeline .timeline-item-content .score,.timeline .timeline-item-content-right .score{
     padding-top: 10px;
     color: #000000;
     font-size: 30px;

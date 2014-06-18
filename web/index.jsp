@@ -18,7 +18,7 @@
         <%@ include file="common/sidebar.jsp" %>
         <!--/span-->
 
-        <div class="col-xs-12 col-sm-10">
+        <div class="col-md-10">
             <div class="path-bar">
                 <ol class="breadcrumb" style="background-color: #eaf4fe;height: 35px;color:#0C8DF1;">
                     <li><a href="">我的云盘</a></li>
@@ -664,7 +664,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <a href="alg.jsp">没有你想要的应用?来算法库看看</a>
+                <a href="alg.jsp">没有你想要的应用?来应用商店看看</a>
                 <button type="button" class="btn btn-default" data-dismiss="modal" id="">开始处理</button>
             </div>
         </div>
@@ -857,5 +857,7 @@
 <script src="bootstrap/js/modal.js"></script>
 <script src="bootstrap/js/tab.js"></script>
 <script src="/js/index.js"></script>
+<%--信息提示--%>
+<script src="/ui/terebentina-sco.js-d4cbed7/js/sco.message.js"></script>
 </body>
 </html>

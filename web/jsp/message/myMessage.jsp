@@ -19,7 +19,7 @@
 <div class="container">
     <div class="row">
         <%@ include file="/common/sidebar.jsp" %>
-        <div class="col-xs-12 col-sm-10">
+        <div class="col-md-10">
 
 
         </div>

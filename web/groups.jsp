@@ -18,7 +18,7 @@
 
         <%@ include file="common/sidebar.jsp" %>
 
-        <div class="col-xs-12 col-sm-10" id="groupHeadDiv">
+        <div class="col-md-10" id="groupHeadDiv">
             <div class="path-bar">
                 <ol class="breadcrumb"  style="background-color: #eaf4fe;color:#0C8DF1;height: 45px;">
                     <li>我的群组</li>

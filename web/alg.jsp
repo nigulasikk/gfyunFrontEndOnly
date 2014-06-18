@@ -46,9 +46,9 @@
 			<%--</div>--%>
 			<!--/span-->
 
-			<div class="col-xs-12 col-sm-10">
+			<div class="col-md-10">
                 <ul class="nav nav-tabs pull-right tabs-color">
-                    <li class="active"><a href="/alg.jsp">算法库&nbsp;<span class="glyphicon glyphicon-gbp"></span></a></li>
+                    <li class="active"><a href="/alg.jsp">应用商店&nbsp;<span class="glyphicon glyphicon-gbp"></span></a></li>
                     <li ><a href="/alg-my-upload.jsp">我的上传&nbsp;<span class="glyphicon glyphicon-heart"></span></a></li>
                     <li ><a href="/alg-my-storage.jsp">我的收藏&nbsp;<span class="glyphicon glyphicon-heart"></span></a></li>
                 </ul>
@@ -60,24 +60,7 @@
 					</ol>
 				</div>
 
-				<div class="row">
-					<form class="navbar-form navbar-left" role="search">
-						<div class="form-group .col-xs-1">
-							<select class="form-control input-sm">
-								<option>全局搜索</option>
-								<option>单位内搜索</option>
-							</select>
-						</div>
-						<div class="form-group">
-							<input type="text" class="form-control input-sm"
-								placeholder="Search">
-						</div>
-						<button type="submit" class="btn btn-default btn-sm">搜索</button>
-						<button type="button" class="btn btn-primary btn-sm"
-							id="newApplicationBtn">上传应用</button>
-					</form>
 
-				</div>
 
 
 
@@ -385,5 +368,7 @@
 <script type="text/javascript" src="/ui/zTree_v3/js/jquery.ztree.excheck-3.5.js"></script>
 
 	<script src="js/alg.js"></script>
+<%--信息提示--%>
+<script src="/ui/terebentina-sco.js-d4cbed7/js/sco.message.js"></script>
 </body>
 </html>

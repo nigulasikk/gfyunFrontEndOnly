@@ -28,7 +28,7 @@
         <%@ include file="common/sidebar.jsp" %>
         <!--/span-->
 
-        <div class="col-xs-12 col-sm-10">
+        <div class="col-md-10">
             <div>
                 <ol class="breadcrumb">
                     <li><a href="">我的群组</a></li>

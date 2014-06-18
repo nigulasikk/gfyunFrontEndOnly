@@ -27,7 +27,7 @@
 
         <!--/span-->
 
-        <div class="col-xs-12 col-sm-10">
+        <div class="col-md-10">
             <div>
                 <ol class="breadcrumb">
                     <li><a href="">我的群组</a></li>
@@ -304,7 +304,7 @@
 
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal" id="">转存</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="groupExportToHddConfirm">转存</button>
             </div>
         </div>
         <!-- /.modal-content -->
@@ -348,5 +348,7 @@
 <input type="hidden" id="groupId" value="1">
 
 <script src="js/groups.js"></script>
+<%--信息提示--%>
+<script src="/ui/terebentina-sco.js-d4cbed7/js/sco.message.js"></script>
 
 </body></html>

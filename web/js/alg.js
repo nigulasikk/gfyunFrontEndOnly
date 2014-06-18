@@ -98,7 +98,8 @@ $(document).ready(function() {
 	
 	$("#finish").click(function(){
 		alert("后台已经开始你的处理请求,处理完成后会在您设定的目录内生成处理结果");
-        showTip("使用算法，-20");
+//        showTip("使用算法，-20");
+        showMessage("使用算法，-20");
 	});
 	
 	$("#newApplicationBtn").click(function(){
@@ -114,7 +115,8 @@ $(document).ready(function() {
 	});
 
     $("#save-alg").click(function(){
-        showTip("上传算法，+200");
+//        showTip("上传算法，+200");
+        showMessage("上传算法，+200");
     });
 	
 });

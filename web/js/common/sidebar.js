@@ -21,19 +21,40 @@ $("#buyHddSpace").click(function(){
 //积分换取容量
 $("#exchangeIntegralToHdd").click(function(){
     var exchangeHddNum=parseInt($("#exchange-hdd-num").val());
-    showTip("换取容量，-"+exchangeHddNum);
-    showTipById("换取容量，+"+exchangeHddNum,"total-hdd");
-    var totalValue=$(".total-hdd").text();
-    var newValue=parseInt(totalValue)
-    $(".total-hdd").text(newValue+exchangeHddNum);
+//    验证输入是否为数字
+    if(checkNumber(exchangeHddNum)){
+//        showTip("换取容量，-"+exchangeHddNum);
+//        showTipById("换取容量，+"+exchangeHddNum,"total-hdd");
+        showMessage("恭喜你，成功用"+exchangeHddNum+"积分，换取"+exchangeHddNum+"容量！")
+        var totalValue=$(".total-hdd").text();
+        var newValue=parseInt(totalValue)
+        $(".total-hdd").text(newValue+exchangeHddNum);
+    }else{
+        alert("你的输入有误，交换的积分只能为数字！");
+    }
+
 });
 
 //购买容量
 $("#buy-hdd").click(function(){
     var buyHddNum=parseInt($("#buy-hdd-num").val());
-    showTipById("购买容量，+"+buyHddNum+"","total-hdd");
-    var totalValue=$(".total-hdd").text();
-    var newValue=parseInt(totalValue)
-    $(".total-hdd").text(newValue+buyHddNum);
+    //    验证输入是否为数字
+    if (checkNumber(buyHddNum)) {
+//        showTipById("购买容量，+"+buyHddNum+"","total-hdd");
+        showMessage("购买容量"+buyHddNum+"G");
+        var totalValue=$(".total-hdd").text();
+        var newValue=parseInt(totalValue)
+        $(".total-hdd").text(newValue+buyHddNum);
+    } else {
+        alert("你的输入有误，交换的积分只能为数字！");
+    }
+
+
 
 });
+
+//正则验证数字
+function checkNumber(value){
+    var patten=/\d{1,}/;
+    return patten.test(value);
+}

@@ -3,7 +3,7 @@
 <!--sidebar侧边栏-->
 <link rel="stylesheet" href="/css/common/sidebar.css">
 
-<div class="col-xs-6 col-sm-2 sidebar-offcanvas" id="sidebar" role="navigation">
+<div class="col-md-2 sidebar-offcanvas" id="sidebar" role="navigation">
     <div class="sidebar-nav-border">
      <ul class="nav nav-pills nav-stacked">
         <li >
@@ -16,7 +16,7 @@
         <li><a href="/groups.jsp">
            <span class="glyphicon glyphicon-tower"></span>&nbsp;&nbsp;我的群组</a></li>
         <li><a href="/alg.jsp">
-            <span class="glyphicon glyphicon-gbp"></span>&nbsp;&nbsp;算法库</a></li>
+            <span class="glyphicon glyphicon-gbp"></span>&nbsp;&nbsp;应用商店</a></li>
     </ul>
         <div class="hdd-volume">云盘容量：</div>
         <div class="progress" style="position: relative;margin-top: 5px;height: 20px;height: 7px;margin-bottom:5px;">

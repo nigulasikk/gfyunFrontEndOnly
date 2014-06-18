@@ -61,7 +61,7 @@
 
     /* header
 ------------------------------------------------------------------------ */
-    #header { /*padding: 4px 0 2px 0;*/ height: 131px; line-height: 30px; min-width: 1000px; position: relative; color: #FFF;font-size: 12px; }
+    #header { /*padding: 4px 0 2px 0;*/ height: 131px; line-height: 30px; min-width: 1000px; position: relative; color: #FFF;font-size: 12px; min-width: 1050px;}
     #header .float-left { float: left; height: 24px; line-height: 24px;}
     #header .float-right { float: right; height: 24px; line-height: 24px; margin-right: 8px;}
 
@@ -138,7 +138,7 @@
         background: -moz-linear-gradient(top, #dedede, white 8%);
         background: -webkit-gradient(linear, 0 0, 0 8%, from(#dedede), to(white));
     }
-    .container{margin-top:40px;}
+    .container{margin-top:40px;min-height: 800px;}
     #header{ background:url(/images/background/bodyback.png) repeat-x #f4f4f4; }
     #department-background{height: 133px;background: url("/images/background/headback.png") no-repeat top center;}
 
@@ -278,8 +278,8 @@
                     </div>
                     <!-- 用户信息 -->
                     <div class="txthead">
-                        <a>国防科工局重大专项工程中心</a>
-                        <p>管理国家高分辨率对地观测系统重大专项的财政拨款事业单位，是国防科工局和中国科学院开展的战略合作</p>
+                        <a>农科院农业资源与农业区划所</a>
+                        <p>农科院农业资源与农业区划所,是以土壤肥料、农业资源利用和区域发展为主导的国家级公益性综合研究机构。</p>
                     </div>
                     <div class="clear"></div>
                     <!-- 选项卡 -->
@@ -290,55 +290,4 @@
     </div>
 </div>
 <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
-<script>
-    /* 购物车、个人中心、快捷方式 */
-    jQuery(".program").hover(function () {
-        jQuery(this).addClass("cover");
-        jQuery(".programdiv", this).show();
-    }, function () {
-        jQuery(this).removeClass("cover");
-        jQuery(".programdiv", this).hide();
-    });
-
-    /* 点击去我的消息 */
-    jQuery("a[name='myIntegral']").click(function () {
-        window.location.assign("/jsp/personalCenter/integral.jsp");
-        $(".integral-num").text("0");
-
-    });
-
-  //  showTip("登录加分，+5");
-   function showTip(text){
-       // 积分提示
-       var userName=$("#userCenter");
-       userName.attr("data-original-title",text);
-       userName.tooltip('show');
-       //两秒后消失
-       setTimeout(function(){
-           destroyTip();
-       },2000);
-       function destroyTip(){
-           userName.tooltip('destroy');
-
-       }
-   }
-    function showTipById(text,id){
-       // 积分提示
-       var userName=$("."+id);
-       userName.attr("data-original-title",text);
-       userName.attr("data-placement",'bottom');
-       userName.tooltip('show');
-       //两秒后消失
-       setTimeout(function(){
-           destroyTip();
-       },2000);
-       function destroyTip(){
-           userName.tooltip('destroy');
-
-       }
-   }
-    $(".changeAdmin").click(function(){
-        $(".name span a strong").text("nyb");
-    });
-
-</script>
+<script src="/js/common/common.js"></script>

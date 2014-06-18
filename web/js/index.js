@@ -77,7 +77,8 @@ $(document).ready(function () {
 //		});
 //    });
     $("#syncBtn").click(function(){
-        showTip("上传文件，+10");
+//        showTip("上传文件，+10");
+        showMessage("上传文件，+10");
     });
     
     //分享按钮的点击事件
@@ -99,7 +100,8 @@ $(document).ready(function () {
 
   $(".downloadOne").click(function(){
       if(confirm("下载此文件要消耗20个积分，你确定要下载吗？")){
-          showTip("下载文件，-20");
+         // showTip("下载文件，-20");
+          showMessage("下载文件，-20");
       }
   });
 

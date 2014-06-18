@@ -24,7 +24,7 @@
 
         <%@ include file="/common/sidebar.jsp" %>
 
-        <div class="col-xs-12 col-sm-10">
+        <div class="col-md-10">
             <div class="path-bar">
                 <ol class="breadcrumb"  style="background-color: #eaf4fe;height: 35px;color:#0C8DF1;">
                     <li>我的分享</li>
@@ -278,6 +278,7 @@
 <script src="bootstrap/js/tab.js"></script>
 <script src="js/DateUtils.js"></script>
 <script src="js/share.js"></script>
-
+<%--信息提示--%>
+<script src="/ui/terebentina-sco.js-d4cbed7/js/sco.message.js"></script>
 </body>
 </html>

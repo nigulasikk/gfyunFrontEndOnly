@@ -492,7 +492,7 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" id="createFolderCompeleteBtn" class="btn btn-primary">完成</button>
+                <button type="button" id="createFolderCompeleteBtn" class="btn btn-primary" data-dismiss="modal">完成</button>
             </div>
         </div>
         <!-- /.modal-content -->
@@ -852,10 +852,11 @@
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="bootstrap/assets/js/jquery.js"></script>
-<script src="bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bootstrap/js/modal.js"></script>
-<script src="bootstrap/js/tab.js"></script>
+<script src="/js/jquery-1.7.2.min.js"></script>
+
+<script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/bootstrap/js/modal.js"></script>
+<script src="/bootstrap/js/tab.js"></script>
 <script src="/js/index.js"></script>
 <%--信息提示--%>
 <script src="/ui/terebentina-sco.js-d4cbed7/js/sco.message.js"></script>

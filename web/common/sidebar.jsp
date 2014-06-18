@@ -91,7 +91,7 @@
                 </p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal" id="exchangeIntegralToHdd">兑换</button>
+                <button type="button" class="btn btn-primary" id="exchangeIntegralToHdd">兑换</button>
             </div>
         </div>
         <!-- /.modal-content -->
@@ -126,7 +126,7 @@
                 <input type="radio"><span style="padding-left: 10px;">银联支付</span>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal" id="buy-hdd">购买</button>
+                <button type="button" class="btn btn-primary" id="buy-hdd">购买</button>
             </div>
         </div>
         <!-- /.modal-content -->
@@ -135,3 +135,4 @@
 </div>
 <!-- /.modal -->
 <script src="/js/common/sidebar.js"></script>
+

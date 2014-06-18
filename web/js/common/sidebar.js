@@ -29,6 +29,7 @@ $("#exchangeIntegralToHdd").click(function(){
         var totalValue=$(".total-hdd").text();
         var newValue=parseInt(totalValue)
         $(".total-hdd").text(newValue+exchangeHddNum);
+        $("#exchangeHddSpaceModal").modal('toggle');
     }else{
         alert("你的输入有误，交换的积分只能为数字！");
     }
@@ -45,6 +46,7 @@ $("#buy-hdd").click(function(){
         var totalValue=$(".total-hdd").text();
         var newValue=parseInt(totalValue)
         $(".total-hdd").text(newValue+buyHddNum);
+        $("#buyHddSpaceModal").modal("toggle");
     } else {
         alert("你的输入有误，交换的积分只能为数字！");
     }

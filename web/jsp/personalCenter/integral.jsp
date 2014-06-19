@@ -32,47 +32,47 @@
     </tr>
     <tr>
         <td>登录</td>
-        <td>5</td>
+        <td>5/次</td>
         <td>5</td>
     </tr>
     <tr>
         <td>ftp上传</td>
-        <td>2</td>
+        <td>2/条</td>
         <td>100</td>
     </tr>
     <tr>
         <td>订单转存到云盘</td>
-        <td>2</td>
+        <td>2/条</td>
         <td>20</td>
     </tr>
     <tr>
         <td>单位分享数据被接受</td>
-        <td>2</td>
+        <td>2/条</td>
         <td>20</td>
     </tr>
      <tr>
-        <td>分享内容被下载</td>
-        <td>2</td>
+        <td>分享数据被下载</td>
+        <td>2/条</td>
         <td>20</td>
     </tr>
      <tr>
         <td>上传应用</td>
-        <td>100</td>
-        <td>200/日</td>
+        <td>100/个</td>
+        <td>200</td>
     </tr>
      <tr>
         <td>上传应用被使用</td>
-        <td>10</td>
+        <td>10/次</td>
         <td>20</td>
     </tr>
      <tr>
         <td>区域订阅</td>
-        <td>2</td>
+        <td>2/次</td>
         <td>10</td>
     </tr>
      <tr>
-        <td>群分享内容被转存</td>
-        <td>1</td>
+        <td>群分享数据被转存</td>
+        <td>1/条</td>
         <td>20</td>
     </tr>
 
@@ -86,22 +86,22 @@
     </tr>
     <tr>
         <td>下载云盘数据</td>
-        <td>2</td>
+        <td>2/条</td>
         <td>无</td>
     </tr>
      <tr>
         <td>接受分享数据</td>
-        <td>1</td>
+        <td>1/条</td>
         <td>无</td>
     </tr>
      <tr>
         <td>使用别人的应用</td>
-        <td>2</td>
+        <td>2/条</td>
         <td>无</td>
     </tr>
      <tr>
         <td>群分享数据转存</td>
-        <td>1</td>
+        <td>1/条</td>
         <td>无</td>
     </tr>
      <tr>
@@ -462,5 +462,7 @@
 <script src="/ui/Chart.js-master/Chart.js"></script>
 <script src="/js/personalCenter/integral.js"></script>
 
+<%--信息提示--%>
+<script src="/ui/terebentina-sco.js-d4cbed7/js/sco.message.js"></script>
 </body>
 </html>

@@ -283,5 +283,8 @@
 <script src="js/groups.js"></script>
 
 <input type="hidden" id="groupId" value="${group.id }"/>
+
+<%--信息提示--%>
+<script src="/ui/terebentina-sco.js-d4cbed7/js/sco.message.js"></script>
 </body>
 </html>

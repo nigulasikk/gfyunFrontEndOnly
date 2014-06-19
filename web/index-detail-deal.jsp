@@ -625,5 +625,8 @@
 <script src="bootstrap/js/modal.js"></script>
 <script src="bootstrap/js/tab.js"></script>
 <script src="/js/index.js"></script>
+
+<%--信息提示--%>
+<script src="/ui/terebentina-sco.js-d4cbed7/js/sco.message.js"></script>
 </body>
 </html>

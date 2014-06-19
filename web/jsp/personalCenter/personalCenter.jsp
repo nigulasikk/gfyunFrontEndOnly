@@ -71,5 +71,7 @@
 <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/bootstrap/js/tab.js"></script>
 
+<%--信息提示--%>
+<script src="/ui/terebentina-sco.js-d4cbed7/js/sco.message.js"></script>
 </body>
 </html>

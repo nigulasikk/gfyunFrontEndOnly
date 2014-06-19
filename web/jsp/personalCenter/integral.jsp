@@ -20,49 +20,98 @@
     <div class="row">
         <%@ include file="/common/sidebar.jsp" %>
         <div class="col-md-10">
-            <%--<div class="self-introduce row">--%>
-                <%--<div class="col-sm-2">--%>
-                    <%--<img src="/images/head.jpg" alt="头像" class="img-rounded">--%>
-                    <%--<div class="progress progress-striped active" style="position: relative;margin-top: 10px;margin-bottom: 10px;">--%>
-                        <%--<span class="lever-detail">460/1100</span>--%>
-                        <%--<div class="progress-bar"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">--%>
-                        <%--</div>--%>
-                    <%--</div>--%>
-                    <%--<p class="lever-name">初级用户</p>--%>
 
-                <%--</div>--%>
-                <%--<div class="col-sm-10">--%>
-                    <%--<h3>个人主页</h3>--%>
-                    <%--<div class="fields">--%>
-                        <%--<span class="field-name"><span class="glyphicon glyphicon-tree-deciduous"></span>&nbsp;单位名称：</span>--%>
-                        <%--<span >国防科工局重大专项工程中心</span>--%>
-                    <%--</div>--%>
-                    <%--<div class="fields">--%>
-                        <%--<span class="field-name"><span class="glyphicon glyphicon-qrcode"></span>&nbsp;用户代码：</span>--%>
-                        <%--<span >cheos</span>--%>
-                    <%--</div>--%>
-
-
-
-                    <%--<div class="fields">--%>
-                        <%--<span class="field-name"><span class="glyphicon glyphicon-user"></span>&nbsp;单位联系人：</span>--%>
-                        <%--<span >工程中心</span>--%>
-                    <%--</div>--%>
-                    <%--<div class="fields">--%>
-                        <%--<span class="field-name"><span class="glyphicon glyphicon-phone"></span>&nbsp;联系电话：</span>--%>
-                        <%--<span >13812345678</span>--%>
-                    <%--</div>--%>
-                    <%--<div class="fields">--%>
-                        <%--<span class="field-name"><span class="glyphicon glyphicon-envelope"></span>&nbsp;E-mail：</span>--%>
-                        <%--<span >cheos@gfg.com</span>--%>
-                    <%--</div>--%>
-                    <%--<div class="fields">--%>
-                        <%--<span class="field-name"><span class="glyphicon glyphicon-star"></span>&nbsp;云盘积分：</span>--%>
-                        <%--<span >88</span>--%>
-                    <%--</div>--%>
-                <%--</div>--%>
-            <%--</div>--%>
                 <h3 class="text-center" style="width: 700px;">近一周积分变化图</h3>
+                <button class="btn btn-lg btn-info pull-right" style="margin-top: 400px;" id="integral-detail" data-toggle="popover" title="" data-content="
+<h5>获取积分</h5>
+<table class='table table-hover' style='font-size:12px;'>
+    <tr>
+        <th>方式</th>
+        <th>分值</th>
+        <th>每日上限</th>
+    </tr>
+    <tr>
+        <td>登录</td>
+        <td>5</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td>ftp上传</td>
+        <td>2</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>订单转存到云盘</td>
+        <td>2</td>
+        <td>20</td>
+    </tr>
+    <tr>
+        <td>单位分享数据被接受</td>
+        <td>2</td>
+        <td>20</td>
+    </tr>
+     <tr>
+        <td>分享内容被下载</td>
+        <td>2</td>
+        <td>20</td>
+    </tr>
+     <tr>
+        <td>上传应用</td>
+        <td>100</td>
+        <td>200/日</td>
+    </tr>
+     <tr>
+        <td>上传应用被使用</td>
+        <td>10</td>
+        <td>20</td>
+    </tr>
+     <tr>
+        <td>区域订阅</td>
+        <td>2</td>
+        <td>10</td>
+    </tr>
+     <tr>
+        <td>群分享内容被转存</td>
+        <td>1</td>
+        <td>20</td>
+    </tr>
+
+</table>
+<h5>消耗积分</h5>
+<table class='table table-hover' style='font-size:12px;'>
+    <tr>
+        <th>方式</th>
+        <th>分值</th>
+        <th>每日上限</th>
+    </tr>
+    <tr>
+        <td>下载云盘数据</td>
+        <td>2</td>
+        <td>无</td>
+    </tr>
+     <tr>
+        <td>接受分享数据</td>
+        <td>1</td>
+        <td>无</td>
+    </tr>
+     <tr>
+        <td>使用别人的应用</td>
+        <td>2</td>
+        <td>无</td>
+    </tr>
+     <tr>
+        <td>群分享数据转存</td>
+        <td>1</td>
+        <td>无</td>
+    </tr>
+     <tr>
+        <td>积分换取容量</td>
+        <td>1积分/G</td>
+        <td>无</td>
+    </tr>
+
+</table>
+  " data-original-title="云盘积分说明" data-placement="left">积分说明</button>
                 <canvas id="canvas" height="450" width="700"></canvas>
 
         </div>
@@ -178,10 +227,10 @@
                                     <span class="score">+100</span>
 
                                     <div class="timeline-title">
-                                        上传算法
+                                        上传应用
                                     </div>
                                     <p>
-                                        上午11：01，上传“去云”算法。
+                                        上午11：01，上传“去云”应用
                                     </p>
                                     <p class="integral-calculate-result">云盘积分：178+100=278</p>
                                 </div>
@@ -193,10 +242,10 @@
                                     <span class="score">+10</span>
 
                                     <div class="timeline-title">
-                                        算法被使用
+                                        上传应用被使用
                                     </div>
                                     <p>
-                                        上午11：01，上传的“去云”算法被国土部使用
+                                        上午11：01，上传的“去云”应用被国土部使用
                                     </p>
                                     <p class="integral-calculate-result">云盘积分：278+10=288</p>
                                 </div>

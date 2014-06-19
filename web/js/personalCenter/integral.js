@@ -1,4 +1,9 @@
-//bootstrap 表格
+//积分提示工具激活
+//popover配置项
+var integralOptions={html:true};
+$("#integral-detail").popover(integralOptions);
+
+//bootstrap 图标
 var lineChartData = {
     labels : ["6-6","6-7","6-8","6-9","6-10","6-11","6-12"],
 

@@ -36,13 +36,14 @@ var zNodes =[
     { id:42, pId:4, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001879.tar.gz", open:true},
     { id:61, pId:6, name:"自定义文件2", open:true},
     { id:51, pId:5, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001873.tar.gz", open:true},
-    { id:611, pId:61, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001879.tar.gz", open:true},
+    { id:611, pId:61, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001879.tar.gz", open:true}
 
 ];
 $(document).ready(function() {
 
     $.fn.zTree.init($("#exportToPanTree"), setting, zNodes);
     $.fn.zTree.init($("#chooseSavePathTree"), settingTree, zNodes);
+    $.fn.zTree.init($("#operate-choose-data"), setting, zNodes);
 
 
 
@@ -122,3 +123,29 @@ $(document).ready(function() {
 });
 //给sidebar增加样式
 $(".sidebar-nav-border .nav li").eq(3).addClass("active2");
+
+//hover应用上 ，变暗的效果
+$(".application-black-layer").hover(function(){
+    $(this).stop().animate({opacity:0.3}, 250);
+    $(this).parent().find(".application-operation").stop().fadeIn('fast');
+}, function () {
+    $(this).stop().animate({opacity:0}, 250);
+    $(this).parent().find(".application-operation").stop().fadeOut('fast');
+
+});
+//鼠标移动到 收藏，使用的时候，会触发 .application-black-layer 出，.application-operation 进
+$(".application-operation").hover(function(){
+    $(this).parent().find(".application-black-layer").stop().animate({opacity:0.3}, 250);
+    $(this).stop().css("display","block");
+    // 鼠标直接移动到操作层，它透明度只有0.1bug
+    $(this).stop().animate({opacity:0.8}, 4);
+}, function () {
+    $(this).parent().find(".application-black-layer").stop().animate({opacity:0}, 250);
+    $(this).stop().fadeOut('fast');
+
+});
+
+
+
+//把application-center的css设置为display:none;然后再把的展现，实现动画效果
+$(".application-center").fadeIn(1000);

@@ -130,6 +130,7 @@ a.white {
     color: #FFF;
     text-decoration: none;
 }
+a.white:hover{    color: #ff7e32;}
 /*背景*/
 body{background-color:  #f4f5f5;
     /*background: white; *//* 为较旧的或者不支持的浏览器设置备用属性 */

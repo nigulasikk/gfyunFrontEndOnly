@@ -52,5 +52,5 @@ function showTipById(text,id){
 }
 //切换用户
 $(".changeAdmin").click(function(){
-    $(".name span a strong").text("nyb");
+    window.location.assign("http://localhost:8080/jsp/portal/login.html");
 });

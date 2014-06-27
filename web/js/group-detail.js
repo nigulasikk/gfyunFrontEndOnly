@@ -19,25 +19,28 @@ var settingTree = {
     }
 };
 setting.check.chkboxType = { "Y" : "ps", "N" : "ps" };
+var iconImg="/images/icon/sat16.png";
+
 var zNodes =[
     { id:1, pId:0, name:"ftp上传", open:true},
-    { id:11, pId:1, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001064.tar.gz", open:true},
-    { id:12, pId:1, name:"GGF1_WFV1_W57.8_S4.0_20130102_L1A0000009712.tar.gz", open:true},
+    { id:11, pId:1, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001064.tar.gz", open:true,icon:iconImg},
+    { id:12, pId:1, name:"GGF1_WFV1_W57.8_S4.0_20130102_L1A0000009712.tar.gz", open:true,icon:iconImg},
     { id:2, pId:0, name:"来自分享", open:true},
     { id:3, pId:0, name:"来自订单", open:true},
     { id:4, pId:0, name:"区域订阅", open:true},
-    { id:5, pId:0, name:"自定义创建文件名", open:true},
-    { id:6, pId:0, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001064.tar.gz", open:true},
-    { id:21, pId:2, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001879.tar.gz", open:true},
-    { id:22, pId:2, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001879.tar.gz", open:true},
-    { id:31, pId:3, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001879.tar.gz", open:true},
-    { id:41, pId:4, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001879.tar.gz", open:true},
-    { id:42, pId:4, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001879.tar.gz", open:true},
-    { id:51, pId:5, name:"自定义文件2", open:true},
-    { id:511, pId:51, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001879.tar.gz", open:true},
+    { id:5, pId:0, name:"云算法生成", open:true},
+    { id:6, pId:0, name:"自定义创建文件名", open:true},
+    { id:7, pId:0, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001064.tar.gz", open:true,icon:iconImg},
+    { id:21, pId:2, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001879.tar.gz", open:true,icon:iconImg},
+    { id:22, pId:2, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001879.tar.gz", open:true,icon:iconImg},
+    { id:31, pId:3, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001879.tar.gz", open:true,icon:iconImg},
+    { id:41, pId:4, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001879.tar.gz", open:true,icon:iconImg},
+    { id:42, pId:4, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001879.tar.gz", open:true,icon:iconImg},
+    { id:61, pId:6, name:"自定义文件2", open:true},
+    { id:51, pId:5, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001873.tar.gz", open:true,icon:iconImg},
+    { id:611, pId:61, name:"GF1_WFV1_W57.8_S4.0_20130102_L1A0000001879.tar.gz", open:true,icon:iconImg}
 
 ];
-
 
 
 

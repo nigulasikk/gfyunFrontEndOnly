@@ -161,3 +161,7 @@
 .col-md-12{padding:10px;}
 
 .choose-data-section{overflow: scroll;}
+
+.border-side-line{border-left: 1px dotted #dcdcdc;border-right: 1px dotted #dcdcdc;}
+
+.algs label{margin-top: 5px;}

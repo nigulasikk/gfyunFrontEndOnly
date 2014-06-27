@@ -93,7 +93,7 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="application application-double-height application-bg-light-blue">
+                        <div class="application application-double-height application-bg-light-blue application-air-condition">
 
                             <span class="glyphicon glyphicon-eye-open application-big-font"></span>
 
@@ -428,16 +428,31 @@
                         <h5>选择路径</h5>
                         <ul id="operate-choose-data" class="ztree"></ul>
                     </div>
-                    <div class="col-md-4">
-                        <h5>工作台</h5>
-                        <div style="width: 300px;height: 300px;background-color: #000000;"></div>
+                    <div class="col-md-4 border-side-line">
+                        <h5>效果展示</h5>
+                       <img id="work-img" src="/images/icon/satBefor.png" style="width: 300px;">
                     </div>
-                    <div class="col-md-2">
+                    <div class="col-md-2 algs">
                         <h5>选择算法</h5>
-                        <input type="checkbox">
-                        <input type="checkbox" checked>
-                        <input type="radio" name="iCheck">
-                        <input type="radio" name="iCheck" checked>
+                        <label class="alg-haze">
+                            <input type="radio" name="algorithm" >
+                            雾霾识别
+                        </label>
+                         <label>
+                            <input type="radio" name="algorithm" >
+                            颗粒物浓度计算
+                        </label>
+                         <label>
+                            <input type="radio" name="algorithm" >
+                            二氧化氮浓度计算
+                        </label>
+                        <label>
+                            <input type="radio" name="algorithm" >
+                            综合空气污染指数
+                        </label>
+
+
+
                     </div>
                 </div>
             </div>
@@ -452,7 +467,6 @@
     <!-- /.modal-dialog -->
 </div>
 
-
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -463,13 +477,36 @@
 <script src="js/jquery.ztree.core-3.5.min.js"></script>
 <script type="text/javascript" src="/ui/zTree_v3/js/jquery.ztree.excheck-3.5.js"></script>
 
-<script src="js/alg.js"></script>
 <%--信息提示--%>
 <script src="/ui/terebentina-sco.js-d4cbed7/js/sco.message.js"></script>
 <%--icheck 选择按钮样式--%>
 <script src="ui/iCheck-master/icheck.js"></script>
+<script src="js/alg.js"></script>
+
 <script>
-    $("#operate-data-modal").modal();
+    $(".application-air-condition").click(function(){
+        if(confirm("你使用的是农业部上传的算法，使用一次要扣除积分20，你确定要使用吗？")){
+            $("#operate-data-modal").modal();
+
+        }
+
+    });
+
+    $('.algs input').each(function(i,item){
+        $(this).on('ifChecked', function (event) {
+            if (i == 0) {
+                $("#work-img").attr("src", "/images/icon/satHaze.png");
+            } else if (i == 1) {
+                $("#work-img").attr("src", "/images/icon/satSolid.png");
+            } else if (i == 2) {
+                $("#work-img").attr("src", "/images/icon/satNO2.png");
+            } else if (i == 3) {
+                $("#work-img").attr("src", "/images/icon/satCph.png");
+            }
+        });
+    });
+
+
 </script>
 </body>
 </html>

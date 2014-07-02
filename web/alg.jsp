@@ -412,21 +412,334 @@
     <!-- /.modal-dialog -->
 </div>
 
+
 <div class="modal fade" id="operate-data-modal" tabindex="-1"
      role="dialog" aria-labelledby="operate-data-modal-label"
      aria-hidden="true">
-    <div class="modal-dialog" style="width: 1000px;">
+    <div class="modal-dialog" style="width: 1300px;">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"
                         aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="operate-data-modal-label">应用操作台</h4>
+                <h4 class="modal-title" id="operate-data-modal-label">“空气环境”应用操作台</h4>
             </div>
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-6 choose-data-section">
-                        <h5>选择路径</h5>
-                        <ul id="operate-choose-data" class="ztree"></ul>
+
+                            <ul class="nav nav-tabs" id="choose-data-tab">
+                                <li class="active"><a href="#choose-data-search">搜索</a></li>
+                                <li><a href="#catalogue">云盘目录</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="choose-data-search">
+                                    <h5>搜索云盘数据</h5>
+
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="文件名，卫星名称，传感器，数据级别">
+                                          <span class="input-group-btn"  >
+                                            <button class="btn btn-default" type="button">搜索</button>
+                                          </span>
+                                    </div>
+                                    <!-- /input-group -->
+                                    <div class="search-data-table">
+
+                                        <table class="search-result">
+                                            <tr>
+                                                <td class="col-md-1">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="col-md-2">
+                                                    <img src="/images/icon/sat.jpg" width="70px;">
+                                                </td>
+                                                <td class="col-md-9">
+                                                    <div>
+                                                        <div class="col-md-12">
+                                                            标示符：http://zydis.gfg.org/103272GF1WFV2/zy_level0_13675
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">卫星名称：GF1</div>
+                                                        <div class="col-md-4">传感器：WF2</div>
+                                                        <div class="col-md-3">条带号：36</div>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">数据级别：LEVEL0_SCENE</div>
+                                                        <div class="col-md-4">网格节点：处理节点</div>
+                                                        <div class="col-md-3">条带号：62</div>
+
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-md-1">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="col-md-2">
+                                                    <img src="/images/icon/sat.jpg" width="70px;">
+                                                </td>
+                                                <td class="col-md-9">
+                                                    <div>
+                                                        <div class="col-md-12">
+                                                            标示符：http://zydis.gfg.org/103272GF1WFV2/zy_level0_1343
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">卫星名称：GF1</div>
+                                                        <div class="col-md-4">传感器：WF2</div>
+                                                        <div class="col-md-3">条带号：36</div>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">数据级别：LEVEL0_SCENE</div>
+                                                        <div class="col-md-4">网格节点：处理节点</div>
+                                                        <div class="col-md-3">条带号：62</div>
+
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-md-1">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="col-md-2">
+                                                    <img src="/images/icon/sat.jpg" width="70px;">
+                                                </td>
+                                                <td class="col-md-9">
+                                                    <div>
+                                                        <div class="col-md-12">
+                                                            标示符：http://zydis.gfg.org/103272GF1WFV2/zy_level0_1325
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">卫星名称：GF1</div>
+                                                        <div class="col-md-4">传感器：WF2</div>
+                                                        <div class="col-md-3">条带号：36</div>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">数据级别：LEVEL0_SCENE</div>
+                                                        <div class="col-md-4">网格节点：处理节点</div>
+                                                        <div class="col-md-3">条带号：62</div>
+
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-md-1">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="col-md-2">
+                                                    <img src="/images/icon/sat.jpg" width="70px;">
+                                                </td>
+                                                <td class="col-md-9">
+                                                    <div>
+                                                        <div class="col-md-12">
+                                                            标示符：http://zydis.gfg.org/103272GF1WFV2/zy_level0_13462
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">卫星名称：GF1</div>
+                                                        <div class="col-md-4">传感器：WF2</div>
+                                                        <div class="col-md-3">条带号：36</div>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">数据级别：LEVEL0_SCENE</div>
+                                                        <div class="col-md-4">网格节点：处理节点</div>
+                                                        <div class="col-md-3">条带号：62</div>
+
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-md-1">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="col-md-2">
+                                                    <img src="/images/icon/sat.jpg" width="70px;">
+                                                </td>
+                                                <td class="col-md-9">
+                                                    <div>
+                                                        <div class="col-md-12">
+                                                            标示符：http://zydis.gfg.org/103272GF1WFV2/zy_level0_13642
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">卫星名称：GF2</div>
+                                                        <div class="col-md-4">传感器：WF2</div>
+                                                        <div class="col-md-3">条带号：36</div>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">数据级别：LEVEL0_SCENE</div>
+                                                        <div class="col-md-4">网格节点：处理节点</div>
+                                                        <div class="col-md-3">条带号：62</div>
+
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-md-1">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="col-md-2">
+                                                    <img src="/images/icon/sat.jpg" width="70px;">
+                                                </td>
+                                                <td class="col-md-9">
+                                                    <div>
+                                                        <div class="col-md-12">
+                                                            标示符：http://zydis.gfg.org/103272GF1WFV2/zy_level0_13675
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">卫星名称：GF1</div>
+                                                        <div class="col-md-4">传感器：WF2</div>
+                                                        <div class="col-md-3">条带号：36</div>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">数据级别：LEVEL0_SCENE</div>
+                                                        <div class="col-md-4">网格节点：处理节点</div>
+                                                        <div class="col-md-3">条带号：62</div>
+
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-md-1">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="col-md-2">
+                                                    <img src="/images/icon/sat.jpg" width="70px;">
+                                                </td>
+                                                <td class="col-md-9">
+                                                    <div>
+                                                        <div class="col-md-12">
+                                                            标示符：http://zydis.gfg.org/103272GF1WFV2/zy_level0_13675
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">卫星名称：GF1</div>
+                                                        <div class="col-md-4">传感器：WF2</div>
+                                                        <div class="col-md-3">条带号：36</div>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">数据级别：LEVEL0_SCENE</div>
+                                                        <div class="col-md-4">网格节点：处理节点</div>
+                                                        <div class="col-md-3">条带号：62</div>
+
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-md-1">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="col-md-2">
+                                                    <img src="/images/icon/sat.jpg" width="70px;">
+                                                </td>
+                                                <td class="col-md-9">
+                                                    <div>
+                                                        <div class="col-md-12">
+                                                            标示符：http://zydis.gfg.org/103272GF1WFV2/zy_level0_13675
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">卫星名称：GF1</div>
+                                                        <div class="col-md-4">传感器：WF2</div>
+                                                        <div class="col-md-3">条带号：36</div>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">数据级别：LEVEL0_SCENE</div>
+                                                        <div class="col-md-4">网格节点：处理节点</div>
+                                                        <div class="col-md-3">条带号：62</div>
+
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-md-1">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="col-md-2">
+                                                    <img src="/images/icon/sat.jpg" width="70px;">
+                                                </td>
+                                                <td class="col-md-9">
+                                                    <div>
+                                                        <div class="col-md-12">
+                                                            标示符：http://zydis.gfg.org/103272GF1WFV2/zy_level0_13675
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">卫星名称：GF1</div>
+                                                        <div class="col-md-4">传感器：WF2</div>
+                                                        <div class="col-md-3">条带号：36</div>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">数据级别：LEVEL0_SCENE</div>
+                                                        <div class="col-md-4">网格节点：处理节点</div>
+                                                        <div class="col-md-3">条带号：62</div>
+
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="col-md-1">
+                                                    <input type="checkbox">
+                                                </td>
+                                                <td class="col-md-2">
+                                                    <img src="/images/icon/sat.jpg" width="70px;">
+                                                </td>
+                                                <td class="col-md-9">
+                                                    <div>
+                                                        <div class="col-md-12">
+                                                            标示符：http://zydis.gfg.org/103272GF1WFV2/zy_level0_13675
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">卫星名称：GF1</div>
+                                                        <div class="col-md-4">传感器：WF2</div>
+                                                        <div class="col-md-3">条带号：36</div>
+
+                                                    </div>
+                                                    <div class="">
+                                                        <div class="col-md-5">数据级别：LEVEL0_SCENE</div>
+                                                        <div class="col-md-4">网格节点：处理节点</div>
+                                                        <div class="col-md-3">条带号：62</div>
+
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+
+
+
+                                        </table>
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="catalogue">
+                                    <h5>选择路径</h5>
+                                    <ul id="operate-choose-data" class="ztree"></ul>
+                                </div>
+
+                            </div>
+
                     </div>
                     <div class="col-md-4 border-side-line">
                         <h5>效果展示</h5>
@@ -458,6 +771,12 @@
             </div>
             <!-- /.modal-content -->
             <div class="modal-footer">
+                <div style="float:left;">
+                    <span>保存目录：</span><span>云算法生成</span>
+                    &nbsp;&nbsp;
+                    <button id="change-save-path" class="btn btn-default" >切换目录</button>
+                </div>
+
                 <button type="button" class="btn btn-default" data-dismiss="modal"
                         id="excute-data">处理
                 </button>
@@ -467,6 +786,30 @@
     <!-- /.modal-dialog -->
 </div>
 
+<div class="modal fade" id="choose-save-path" tabindex="-1" role="dialog"
+     aria-labelledby="use-application-modal-label" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="use-application-modal-label">设置保存路径</h4>
+            </div>
+            <div class="modal-body">
+                <ul id="operate-choose-save-path" class="ztree"></ul>
+            </div>
+            <!-- /.modal-content -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"
+                        id="">取消
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal" id="">保存</button>
+
+            </div>
+        </div>
+    </div>
+    <!-- /.modal-dialog -->
+</div>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
@@ -484,6 +827,12 @@
 <script src="js/alg.js"></script>
 
 <script>
+    $(function () {
+        $('#choose-data-tab a').click(function (e) {
+            e.preventDefault();
+            $(this).tab('show');
+        })
+    })
     $(".application-air-condition").click(function(){
         if(confirm("你使用的是农业部上传的算法，使用一次要扣除积分20，你确定要使用吗？")){
             $("#operate-data-modal").modal();

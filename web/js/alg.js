@@ -44,6 +44,7 @@ var zNodes =[
 $(document).ready(function() {
 
     $.fn.zTree.init($("#exportToPanTree"), setting, zNodes);
+    $.fn.zTree.init($("#operate-choose-save-path"), settingTree, zNodes);
     $.fn.zTree.init($("#chooseSavePathTree"), settingTree, zNodes);
     $.fn.zTree.init($("#operate-choose-data"), setting, zNodes);
 
@@ -106,6 +107,9 @@ $(document).ready(function() {
     $("#save-alg").click(function(){
 //        showTip("上传算法，+200");
         showMessage("上传算法，+200");
+    });
+    $("#change-save-path").click(function(){
+        $("#choose-save-path").modal('toggle');
     });
 	
 });

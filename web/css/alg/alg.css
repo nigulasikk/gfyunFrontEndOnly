@@ -145,7 +145,7 @@
     width: 48%;
     display: inline-block;
 }
-
+.search-result{width: 100%}
 /*使得win8风格间距减少*/
 .col-md-1,
 .col-md-2,
@@ -160,6 +160,19 @@
 .col-md-11,
 .col-md-12{padding:10px;}
 
+.search-data-table{border-top:solid #cccccc 1px;margin-top: 20px;font-size: 12px;max-height: 400px;overflow: scroll;}
+.search-result .col-md-1,
+.search-result  .col-md-2,
+.search-result  .col-md-3,
+.search-result  .col-md-4,
+.search-result  .col-md-5,
+.search-result  .col-md-6,
+.search-result  .col-md-7,
+.search-result  .col-md-8,
+.search-result  .col-md-9,
+.search-result  .col-md-10,
+.search-result  .col-md-11,
+.search-result  .col-md-12{padding:5px;}
 .choose-data-section{overflow: scroll;}
 
 .border-side-line{border-left: 1px dotted #dcdcdc;border-right: 1px dotted #dcdcdc;}

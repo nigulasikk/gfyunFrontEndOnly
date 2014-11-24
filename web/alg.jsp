@@ -416,7 +416,7 @@
 <div class="modal fade" id="operate-data-modal" tabindex="-1"
      role="dialog" aria-labelledby="operate-data-modal-label"
      aria-hidden="true">
-    <div class="modal-dialog" style="width: 1300px;">
+    <div class="modal-dialog" style="width: 1200px;">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal"
@@ -425,7 +425,7 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-md-6 choose-data-section">
+                    <div class="col-md-7 choose-data-section">
 
                             <ul class="nav nav-tabs" id="choose-data-tab">
                                 <li class="active"><a href="#choose-data-search">搜索</a></li>
@@ -741,9 +741,9 @@
                             </div>
 
                     </div>
-                    <div class="col-md-4 border-side-line">
+                    <div class="col-md-3 border-side-line">
                         <h5>效果展示</h5>
-                       <img id="work-img" src="/images/icon/satBefor.png" style="width: 300px;">
+                       <img id="work-img" src="/images/icon/satBefor.png" style="width: 270px;">
                     </div>
                     <div class="col-md-2 algs">
                         <h5>选择算法</h5>

@@ -64,8 +64,9 @@ $(document).ready(function() {
 		$("#setParamModal").modal('toggle');
 	});
 	
-	$(".store-application-btn").click(function(){
+	$(".store-application-btn").click(function(e){
 		alert("收藏成功");
+        e.stopPropagation();
 	});
 	
 	$("#next2").click(function(){

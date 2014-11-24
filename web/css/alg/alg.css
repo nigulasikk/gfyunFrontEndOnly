@@ -160,7 +160,7 @@
 .col-md-11,
 .col-md-12{padding:10px;}
 
-.search-data-table{border-top:solid #cccccc 1px;margin-top: 20px;font-size: 12px;max-height: 400px;overflow: scroll;}
+.search-data-table{border-top:solid #cccccc 1px;margin-top: 20px;font-size: 12px;max-height: 400px;overflow-y: scroll;overflow-x: hidden;}
 .search-result .col-md-1,
 .search-result  .col-md-2,
 .search-result  .col-md-3,
@@ -173,7 +173,7 @@
 .search-result  .col-md-10,
 .search-result  .col-md-11,
 .search-result  .col-md-12{padding:5px;}
-.choose-data-section{overflow: scroll;}
+.choose-data-section{}
 
 .border-side-line{border-left: 1px dotted #dcdcdc;border-right: 1px dotted #dcdcdc;}
 
